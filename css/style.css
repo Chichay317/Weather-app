@@ -1,7 +1,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #d0ebff;
+  background-color: #fff;
+  /* background-color: #d0ebff; */
 }
+
+/* https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png */
 
 h1 {
   color: #878787;
@@ -36,8 +39,10 @@ li {
   max-width: 600px;
   margin: 30px auto 10px auto;
   padding: 20px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   border-radius: 10px;
+  box-shadow: 0px 6px 27px 3px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
 }
 
 .overview {
