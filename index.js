@@ -1,6 +1,36 @@
 let apiKey = "e4a66098597897c288a0a1260d73a719";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?&lat={lat}&lon={lon}&appid=${apiKey}&units=metric`;
 
+const displayForecast = function () {
+  const forecastEl = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach((day) => {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+     <div class="weather-date">${day}</div>
+     <img
+      src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+      alt="Thursday Forecast"
+      width="42"
+     />
+     <div class="weather-forecast-temperatures">
+      <span class="weather-forecast-temperature-max">18°</span>
+      <span class="weather-forecast-temperature-min">12°</span>
+     </div>
+    </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastEl.innerHTML = forecastHTML;
+};
+
+displayForecast();
+
 const search = function (city) {
   let apiKey = "e4a66098597897c288a0a1260d73a719";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lat={lat}&lon={lon}&appid=${apiKey}&units=metric`;
