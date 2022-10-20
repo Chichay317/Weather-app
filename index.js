@@ -11,7 +11,7 @@ const formatDay = function (timestamp) {
 
 const displayForecast = function (response) {
   let dayForecast = response.data.daily;
-  console.log(dayForecast);
+  // console.log(dayForecast);
   const forecastEl = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -61,7 +61,7 @@ const getForecast = function (coord) {
 };
 
 const displayTemperature = function (response) {
-  console.log(response.data);
+  // console.log(response.data);
   let temperatureEl = document.querySelector("#temperature");
   let city = document.querySelector("#city");
   let description = document.querySelector("#description");
@@ -84,7 +84,7 @@ const displayTemperature = function (response) {
   city.innerHTML = response.data.city;
   description.innerHTML = response.data.condition.description;
   humidity.innerHTML = `${response.data.temperature.humidity}%`;
-  speed.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
+  speed.innerHTML = `${Math.round(response.data.wind.speed)}m/h`;
   date.innerHTML = new Intl.DateTimeFormat(locale, options).format(now);
   icon.setAttribute(
     "src",

@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #fff;
-  /* background-color: #d0ebff; */
+  /* background-color: #fff; */
+  background-color: #d0ebff;
 }
 
 /* https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png */
@@ -66,6 +66,10 @@ li {
   color: rgb(33, 33, 33);
 }
 
+.weather-temperature {
+  position: relative;
+}
+
 .weather-temperature .units {
   font-size: 16px;
 }
@@ -95,4 +99,49 @@ li {
 
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+
+@media (max-width: 30em) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .weather-temperature strong {
+    font-size: 40px;
+  }
+
+  .d-flex {
+    align-items: center;
+  }
+
+  .weather-temperature .units {
+    font-size: 16px;
+    position: relative;
+    top: -12px;
+  }
+
+  .hum-wind {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 26em) {
+  .weather-app {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 25em) {
+  #fahrenheit-link {
+    display: none;
+  }
+
+  .input-box {
+    width: 100%;
+  }
+
+  .search-box {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
