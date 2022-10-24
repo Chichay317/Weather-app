@@ -88,7 +88,7 @@ const displayTemperature = function (response) {
   date.innerHTML = new Intl.DateTimeFormat(locale, options).format(now);
   icon.setAttribute(
     "src",
-    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+    `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   icon.setAttribute("alt", response.data.condition.description);
 
