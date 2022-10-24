@@ -7,7 +7,7 @@ body {
 /* https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png */
 
 h1 {
-  color: #878787;
+  color: #555;
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
@@ -23,7 +23,7 @@ li {
   list-style: none;
   text-transform: capitalize;
   font-size: 16px;
-  color: rgb(135, 135, 135);
+  color: #555;
   font-weight: 500;
   line-height: 19px;
   margin: 0;
